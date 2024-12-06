@@ -5,7 +5,7 @@ import datetime
 import google.generativeai as genai
 
 # Configurar la clave de la API de Gemini
-GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
+GOOGLE_API_KEY = st.secrets['google_api_key']
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Título de la aplicación
